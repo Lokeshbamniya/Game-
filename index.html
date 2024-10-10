@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Trading Game</h1>
+        <div id="balance-section">
+            <p>Current Balance: ₹<span id="balance">100</span></p>
+        </div>
+    </header>
+
+    <!-- Game Controls -->
+    <section id="bet-section">
+        <button class="bet-btn" id="big-btn">Big</button>
+        <button class="bet-btn" id="small-btn">Small</button>
+        <div id="countdown-timer">30</div>
+    </section>
+
+    <!-- Betting History -->
+    <section id="history-section">
+        <h2>Betting History</h2>
+        <div class="history-container">
+            <div class="history-tab" id="game-history-tab">Game History</div>
+            <div class="history-tab" id="your-history-tab">Your History</div>
+        </div>
+        <div class="history-box" id="game-history"></div>
+        <div class="history-box" id="user-history"></div>
+    </section>
+
+    <!-- Wallet Options -->
+    <section id="wallet-section">
+        <button id="add-money">Add Money</button>
+        <button id="withdraw-money">Withdraw Money</button>
+    </section>
+
+    <!-- Bet Amount Selection Popup -->
+    <div id="bet-popup" class="popup">
+        <div class="popup-content">
+            <h3>Select Bet Amount</h3>
+            <button class="amount-btn" data-amount="1">₹1</button>
+            <button class="amount-btn" data-amount="5">₹5</button>
+            <button class="amount-btn" data-amount="20">₹20</button>
+            <button class="amount-btn" data-amount="50">₹50</button>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div id="notification" class="notification">You won!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
